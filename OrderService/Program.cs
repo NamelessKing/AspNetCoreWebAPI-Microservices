@@ -35,7 +35,7 @@ namespace OrderService
         public static IWebHostBuilder CreateWebHostBuilder(string[] args, IBus bus) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(svc => svc.AddSingleton<IBus>(bus))
-                .UseUrls("http://192.168.18.217:8080")
+                .UseUrls("http://192.168.5.166:8080")
                 .UseStartup<Startup>();
     }
 }

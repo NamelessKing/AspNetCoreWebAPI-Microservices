@@ -40,7 +40,7 @@ namespace SupplyService
         public static IWebHostBuilder CreateWebHostBuilder(string[] args, IBus bus) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(svc => svc.AddSingleton<IBus>(bus))
-                .UseUrls("http://192.168.18.217:8081")
+                .UseUrls("http://192.168.5.166:8081")
                 .UseStartup<Startup>();
     }
 }
